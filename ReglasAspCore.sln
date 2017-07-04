@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReglasAspCore", "ReglasAspCore\ReglasAspCore.csproj", "{9158E46D-7CA1-440A-AC70-90D951D13B4C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppCoreBD", "..\..\..\..\Source\Repos\BusinessRulesManager\BusinessRulesProject\AppCoreBD\AppCoreBD.csproj", "{1D8AA085-D16D-441F-A93F-658C2247F05D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReglasServices", "ReglasServices\ReglasServices.csproj", "{E6E66F48-EA11-463B-9048-301ADE29096B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReglasServices", "ReglasServices\ReglasServices.csproj", "{E6E66F48-EA11-463B-9048-301ADE29096B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9158E46D-7CA1-440A-AC70-90D951D13B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9158E46D-7CA1-440A-AC70-90D951D13B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9158E46D-7CA1-440A-AC70-90D951D13B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9158E46D-7CA1-440A-AC70-90D951D13B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D8AA085-D16D-441F-A93F-658C2247F05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D8AA085-D16D-441F-A93F-658C2247F05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D8AA085-D16D-441F-A93F-658C2247F05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
