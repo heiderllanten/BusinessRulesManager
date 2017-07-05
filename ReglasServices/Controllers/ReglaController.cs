@@ -53,23 +53,13 @@ namespace ReglasServices.Controllers
             foreach (var r in reglas)
             {
                 Func<User, bool> compiledRule = CompileRule<User>(r);
-                if (!compiledRule(usuario))
+                resp.Add(new
                 {
-                    resp.Add(new {
-                        atributoEvaluado = r.Propiedad,
-                        regla = r.Operador,
-                        valorRegla = r.ValorComparacion,
-                        resultado = false });
-                }
-                else
-                {
-                    resp.Add(new
-                    {
-                        atributoEvaluado = r.Propiedad,
-                        regla = r.Operador,
-                        valorRegla = r.ValorComparacion,
-                        resultado = true });
-                }
+                    atributoEvaluado = r.Propiedad,
+                    regla = r.Operador,
+                    valorRegla = r.ValorComparacion,
+                    resultado = compiledRule(usuario)
+                });
             }
             return Ok(new { response = resp });
         }
